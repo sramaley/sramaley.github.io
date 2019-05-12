@@ -1,5 +1,5 @@
 p {
-  animation-name: slidein;
+  animation-name: wiggle;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
