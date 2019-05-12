@@ -18,9 +18,28 @@ h1 {
 }
 #lion {
   width: 50vw;
-  margin: auto;
+  animation: lion 5s ease-in-out infinite;
 }
-
+@keyframes lion {
+  from {
+    margin-left: 0%;
+  }
+  40% {
+    margin-left: 50vw;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-left: 50vw;
+    transform: rotateY(180deg);
+  }
+  90% {
+    margin-left: 0;
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
 @keyframes wiggle {
   50% { margin-top: -30px; }
 }
