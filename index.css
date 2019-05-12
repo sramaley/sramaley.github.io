@@ -3,22 +3,28 @@ body {
   background-color: #62259d;
   color: white;
 }
-p {
+div {
+}
+h1, h3 {
+  text-align: center;
+
+}
+h3 {
   animation-name: wiggle;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  position: relative;
-  margin-top: 0px;
+  margin-bottom: 0px;
 }
-h1 {
-  font-family: cursive;
+p {
   animation-duration: 3s;
   animation-name: slidein;
+  position: absolute;
+  bottom: 0;
 }
 #lion {
   width: 50vw;
-  animation: lion 5s ease-in-out infinite;
+  animation: lion 6s ease-in-out infinite;
 }
 @keyframes lion {
   from {
@@ -41,7 +47,7 @@ h1 {
   }
 }
 @keyframes wiggle {
-  50% { margin-top: -30px; }
+  50% { margin-bottom: 50px; }
 }
 @keyframes slidein {
   from {
